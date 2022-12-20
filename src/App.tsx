@@ -1,9 +1,10 @@
 import React from "react";
+import Nav from "./common/Nav";
 
 function App() {
   return (
     <div className="App">
-      hello world!
+      <Nav />
       <img
         src="https://ssl.pstatic.net/static/wevweb/assets/web/home_banner_slogan.gif"
         alt="mid banner"
