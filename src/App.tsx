@@ -1,15 +1,14 @@
 import React from "react";
-import Nav from "./common/Nav";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <img
-        src="https://ssl.pstatic.net/static/wevweb/assets/web/home_banner_slogan.gif"
-        alt="mid banner"
-      />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
